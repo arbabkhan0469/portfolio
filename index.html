@@ -1,38 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arbab | Frontend Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <span class="logo">Arbab</span>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header class="hero">
     <p class="hello">Hi, I'm</p>
     <h1>Arbab</h1>
     <p class="role">Aspiring Frontend Developer</p>
-    <p class="bio">Main Islamabad mein rehta hoon aur React seekh raha hoon.</p>
-    <a class="btn" href="https://wa.me/923145910469">WhatsApp</a>
+    <a class="btn" href="#projects">View Projects</a>
   </header>
 
   <main>
-    <section>
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm based in Islamabad and I'm learning frontend development with HTML, CSS, JavaScript and React. I enjoy building small, practical projects and improving them step by step.</p>
+    </section>
+
+    <section id="skills">
       <h2>Skills</h2>
       <div class="chips">
         <span>HTML</span>
         <span>CSS</span>
         <span>JavaScript</span>
         <span>React (learning)</span>
+        <span>Git & GitHub</span>
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <div class="card">
         <h3>Todo App</h3>
-        <p>Kaam add, delete, aur Enter se add. HTML, CSS, JavaScript.</p>
-        <a href="todo/">Open project</a>
+        <p>Add and delete tasks, with Enter key support. Built with HTML, CSS and JavaScript.</p>
+        <a href="todo/">Live Demo</a>
+        <a href="https://github.com/arbabkhan0469/portfolio/tree/main/todo">Code</a>
+      </div>
+      <div class="card soon">
+        <h3>Expense Tracker</h3>
+        <p>Coming soon.</p>
       </div>
     </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Let's talk about work or internships.</p>
+      <a class="btn" href="https://wa.me/923145910469">WhatsApp</a>
+      <a class="btn outline" href="https://github.com/arbabkhan0469">GitHub</a>
+    </section>
   </main>
+
+  <footer>© 2026 Arbab</footer>
 </body>
-</html>
+        </html>
