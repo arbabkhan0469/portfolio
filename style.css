@@ -9,11 +9,12 @@ body {
 nav {
   position: sticky;
   top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 20px;
-  background: rgba(15, 23, 42, 0.92);
+  background: #0f172a;
   border-bottom: 1px solid #1e293b;
 }
 .logo { font-weight: bold; color: #38bdf8; }
@@ -43,6 +44,7 @@ h1 {
   text-decoration: none;
   margin: 6px 4px;
 }
+.btn.whatsapp { background: #25d366; }
 .btn.outline { background: transparent; border: 1px solid #38bdf8; color: #38bdf8; }
 main { max-width: 640px; margin: 0 auto; padding: 0 24px 40px; }
 section { padding-top: 30px; }
