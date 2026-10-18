@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(180deg, #1e5aa8 0%, #4a90d9 50%, #bfe3ff 100%);
+  background-attachment: fixed;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+h1 { margin-top: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+
+.form { display: flex; gap: 8px; }
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1e5aa8;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 24px;
+  text-align: center;
+}
+.card h2 { margin: 0; }
+.temp { font-size: 64px; font-weight: bold; margin: 8px 0; }
+.card p { margin: 4px 0; }
+.error {
+  background: rgba(255, 255, 255, 0.9);
+  color: #b91c1c;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.clouds {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+.cloud {
+  position: absolute;
+  left: -220px;
+  width: 140px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  animation: drift linear infinite;
+}
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  border-radius: 50%;
+}
+.cloud::before { width: 60px; height: 60px; top: -28px; left: 22px; }
+.cloud::after { width: 80px; height: 80px; top: -38px; left: 62px; }
+
+.c1 { top: 12%; animation-duration: 45s; }
+.c2 { top: 45%; transform: scale(1.4); animation-duration: 70s; animation-delay: -25s; opacity: 0.7; }
+.c3 { top: 75%; transform: scale(0.8); animation-duration: 55s; animation-delay: -10s; }
+
+@keyframes drift {
+  from { left: -220px; }
+  to { left: 110%; }
+                              }
